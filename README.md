@@ -8,19 +8,19 @@ HS110 Energy Monitoring
 * Power Mac M1 16GB RAM
 * Python 3.10
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/hs110energymeter.jpg" width=150>
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/hs110energymeter.jpg" width="200">
 
 
 ### Device Output Shown in iPhone Application
 
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energyscreen1.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energyscreen1.png" width="400">
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energydeviceinfo.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energydeviceinfo.png" width="400">
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energyruntime.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energyruntime.png" width="400">
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energyusage.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energyusage.png" width="400">
 
 ### Run the code
 
@@ -141,7 +141,7 @@ key:[20220831200138-4e54b5e0-7e49-49dc-be5e-8737dd6cd200], properties:[], conten
 
 #### Results of Consuming Data
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/consumeresults.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/consumeresults.png" width="600">
 
 
 ### Schema 
@@ -371,28 +371,28 @@ group by model;
 
 #### Flink SQL Results Row Summary
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/rowsummary.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/rowsummary.png" width="600">
 
 #### Flink SQL Results - Standard Select
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/currentAndPower.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/currentAndPower.png" width="600">
 
 #### Flink SQL Results - Max
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinkeletricmax.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinkeletricmax.png" width="600">
 
 #### Flink SQL Dashboard - Average Metrics
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinksqlavgmetrics.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinksqlavgmetrics.png" width="600">
 
 #### Flink SQL Dashboard - Group by Details
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinksqlgroupbydetail.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinksqlgroupbydetail.png" width="600">
 
 
 ### Displaying The Topic in Pulsar Manager
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/pmelectric.png" width="300">
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/pmelectric.png" width="600">
 
 * https://github.com/apache/pulsar-manager
 
