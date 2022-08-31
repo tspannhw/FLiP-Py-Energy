@@ -139,6 +139,11 @@ key:[20220831200138-4e54b5e0-7e49-49dc-be5e-8737dd6cd200], properties:[], conten
 
 ````
 
+#### Results of Consuming Data
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/consumeresults.png" width="300">
+
+
 ### Schema 
 
 ````
@@ -363,15 +368,24 @@ from electric
 group by model;
 
 ````
+
+#### Flink SQL Results Row Summary
+
 <img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/rowsummary.png" width="300">
 
-<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/consumeresults.png" width="300">
+#### Flink SQL Results - Standard Select
 
 <img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/currentAndPower.png" width="300">
 
+#### Flink SQL Results - Max
+
 <img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinkeletricmax.png" width="300">
 
+#### Flink SQL Dashboard - Average Metrics
+
 <img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinksqlavgmetrics.png" width="300">
+
+#### Flink SQL Dashboard - Group by Details
 
 <img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinksqlgroupbydetail.png" width="300">
 
@@ -380,6 +394,7 @@ group by model;
 
 <img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/pmelectric.png" width="300">
 
+* https://github.com/apache/pulsar-manager
 
 ### Reference
 
