@@ -8,6 +8,14 @@ HS110 Energy Monitoring
 * Power Mac M1 16GB RAM
 * Python 3.10
 
+### Run the code
+
+````
+
+python3 energy.py -t persistent://public/default/electric -su pulsar://pulsar1:6650
+
+````
+
 ### Delete a topic (shell script)
 
 ````
