@@ -201,8 +201,14 @@ class electric(Record):
     macaddress = String()
 ````
 
+### To Retrieve Schema (see https://github.com/tspannhw/FLiP-Py-Energy/blob/main/electric.schema)
 
-# Reference
+````
+bin/pulsar-admin schemas get persistent://public/default/electric
+
+````
+
+### Reference
 
 * https://github.com/tspannhw/pulsar-energy-function
 * https://github.com/tspannhw/ApacheConAtHome2020/blob/main/schemas/energy.avsc
