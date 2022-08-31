@@ -8,6 +8,20 @@ HS110 Energy Monitoring
 * Power Mac M1 16GB RAM
 * Python 3.10
 
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/hs110energymeter.jpg" width=150>
+
+
+### Device Output Shown in iPhone Application
+
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energyscreen1.png" width="300">
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energydeviceinfo.png" width="300">
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energyruntime.png" width="300">
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/energyusage.png" width="300">
+
 ### Run the code
 
 ````
