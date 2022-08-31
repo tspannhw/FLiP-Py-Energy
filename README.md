@@ -2,7 +2,20 @@
 HS110 Energy Monitoring
 
 
-# Fields are dynamic depending on day of week, month, year
+### Delete a topic (shell script)
+
+````
+echo "Delete topic $1"
+bin/pulsar-admin schemas delete "$1"
+bin/pulsar-admin topics delete "$1" --force
+bin/pulsar-admin topics unload "$1"
+
+bin/pulsar-admin schemas delete "$1-partition-0"
+bin/pulsar-admin topics delete "$1-partition-0" --force
+bin/pulsar-admin topics unload "$1-partition-0"
+````
+
+### Fields are dynamic depending on day of week, month, year
 
 ````
 bin/pulsar-client consume "persistent://public/default/electric" -s electricavenue -n 0
