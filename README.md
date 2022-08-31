@@ -343,6 +343,25 @@ Flink SQL> describe electric;
 +---------------------+---------+------+-----+--------+-----------+
 84 rows in set
 
+select `current` as AvgCurrent, 
+       voltage as MaxVoltage,
+       `power` as MaxPower,
+       current_consumption,
+       `total` as Total,
+       day31,
+       month8,
+       devicetime,
+       model,
+       systemtime
+from electric;
+
+select avg(`current`) as AvgCurrent, 
+       max(voltage) as MaxVoltage,
+       max(`power`) as MaxPower,
+       model
+from electric
+group by model;
+
 ````
 
 ### Reference
