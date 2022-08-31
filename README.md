@@ -1,6 +1,12 @@
-# FLiP-Py-Energy
+### FLiP-Py-Energy
+
 HS110 Energy Monitoring
 
+### Hardware
+
+* HS-110 TP-Link Monitoring Device
+* Power Mac M1 16GB RAM
+* Python 3.10
 
 ### Delete a topic (shell script)
 
@@ -111,7 +117,7 @@ key:[20220831200138-4e54b5e0-7e49-49dc-be5e-8737dd6cd200], properties:[], conten
 
 ````
 
-# Schema 
+### Schema 
 
 ````
 class electric(Record):
@@ -205,6 +211,115 @@ class electric(Record):
 
 ````
 bin/pulsar-admin schemas get persistent://public/default/electric
+
+````
+
+
+### Flink SQL
+
+````
+
+CREATE CATALOG pulsar WITH (
+   'type' = 'pulsar',
+   'service-url' = 'pulsar://pulsar1:6650',
+   'admin-url' = 'http://pulsar1:8080',
+   'format' = 'json'
+);
+
+USE CATALOG pulsar;
+
+SHOW TABLES;
+
+Flink SQL> describe electric;
++---------------------+---------+------+-----+--------+-----------+
+|                name |    type | null | key | extras | watermark |
++---------------------+---------+------+-----+--------+-----------+
+|             current |   FLOAT | true |     |        |           |
+|             voltage |   FLOAT | true |     |        |           |
+|               power |   FLOAT | true |     |        |           |
+|               total |   FLOAT | true |     |        |           |
+|              sw_ver |  STRING | true |     |        |           |
+|              hw_ver |  STRING | true |     |        |           |
+|                type |  STRING | true |     |        |           |
+|               model |  STRING | true |     |        |           |
+|                 mac |  STRING | true |     |        |           |
+|            deviceId |  STRING | true |     |        |           |
+|                hwId |  STRING | true |     |        |           |
+|                fwId |  STRING | true |     |        |           |
+|               oemId |  STRING | true |     |        |           |
+|               alias |  STRING | true |     |        |           |
+|            dev_name |  STRING | true |     |        |           |
+|           icon_hash |  STRING | true |     |        |           |
+|         relay_state |     INT | true |     |        |           |
+|             on_time |     INT | true |     |        |           |
+|         active_mode |  STRING | true |     |        |           |
+|             feature |  STRING | true |     |        |           |
+|            updating |     INT | true |     |        |           |
+|                rssi |     INT | true |     |        |           |
+|             led_off |     INT | true |     |        |           |
+|            latitude |   FLOAT | true |     |        |           |
+|           longitude |   FLOAT | true |     |        |           |
+|                day1 |   FLOAT | true |     |        |           |
+|                day2 |   FLOAT | true |     |        |           |
+|                day3 |   FLOAT | true |     |        |           |
+|                day4 |   FLOAT | true |     |        |           |
+|                day5 |   FLOAT | true |     |        |           |
+|                day6 |   FLOAT | true |     |        |           |
+|                day7 |   FLOAT | true |     |        |           |
+|                day8 |   FLOAT | true |     |        |           |
+|                day9 |   FLOAT | true |     |        |           |
+|               day10 |   FLOAT | true |     |        |           |
+|               day11 |   FLOAT | true |     |        |           |
+|               day12 |   FLOAT | true |     |        |           |
+|               day13 |   FLOAT | true |     |        |           |
+|               day14 |   FLOAT | true |     |        |           |
+|               day15 |   FLOAT | true |     |        |           |
+|               day16 |   FLOAT | true |     |        |           |
+|               day17 |   FLOAT | true |     |        |           |
+|               day18 |   FLOAT | true |     |        |           |
+|               day19 |   FLOAT | true |     |        |           |
+|               day20 |   FLOAT | true |     |        |           |
+|               day21 |   FLOAT | true |     |        |           |
+|               day22 |   FLOAT | true |     |        |           |
+|               day23 |   FLOAT | true |     |        |           |
+|               day24 |   FLOAT | true |     |        |           |
+|               day25 |   FLOAT | true |     |        |           |
+|               day26 |   FLOAT | true |     |        |           |
+|               day27 |   FLOAT | true |     |        |           |
+|               day28 |   FLOAT | true |     |        |           |
+|               day29 |   FLOAT | true |     |        |           |
+|               day30 |   FLOAT | true |     |        |           |
+|               day31 |   FLOAT | true |     |        |           |
+|               index |     INT | true |     |        |           |
+|            zone_str |  STRING | true |     |        |           |
+|              tz_str |  STRING | true |     |        |           |
+|          dst_offset |     INT | true |     |        |           |
+|              month1 |   FLOAT | true |     |        |           |
+|              month2 |   FLOAT | true |     |        |           |
+|              month3 |   FLOAT | true |     |        |           |
+|              month4 |   FLOAT | true |     |        |           |
+|              month5 |   FLOAT | true |     |        |           |
+|              month6 |   FLOAT | true |     |        |           |
+|              month7 |   FLOAT | true |     |        |           |
+|              month8 |   FLOAT | true |     |        |           |
+|              month9 |   FLOAT | true |     |        |           |
+|             month10 |   FLOAT | true |     |        |           |
+|             month11 |   FLOAT | true |     |        |           |
+|             month12 |   FLOAT | true |     |        |           |
+|                host |  STRING | true |     |        |           |
+| current_consumption |   FLOAT | true |     |        |           |
+|          devicetime |  STRING | true |     |        |           |
+|               ledon | BOOLEAN | true |     |        |           |
+|                 end |  STRING | true |     |        |           |
+|                  te |  STRING | true |     |        |           |
+|          systemtime |  STRING | true |     |        |           |
+|                 cpu |   FLOAT | true |     |        |           |
+|              memory |   FLOAT | true |     |        |           |
+|           diskusage |  STRING | true |     |        |           |
+|                uuid |  STRING | true |     |        |           |
+|          macaddress |  STRING | true |     |        |           |
++---------------------+---------+------+-----+--------+-----------+
+84 rows in set
 
 ````
 
