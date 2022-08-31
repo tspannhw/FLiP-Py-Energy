@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Apache Pulsar - Websockets - Data Tables - Electric</title>
+<link rel="stylesheet" type="text/css"  href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+</head>
+<body bgcolor="white" text="black">
+<img data-v-c612f5f2="" alt="StreamNative Logo" src="https://streamnative.io/assets/static/sn-logo-vertical-dark.c516648.a34f97839dee38e7499aa0c21d0b2255.png" width="543" data-src="https://streamnative.io/assets/static/sn-logo-vertical-dark.c516648.a34f97839dee38e7499aa0c21d0b2255.png" data-srcset="https://streamnative.io/assets/static/sn-logo-vertical-dark.c516648.a34f97839dee38e7499aa0c21d0b2255.png 543w" data-sizes="(max-width: 543px) 100vw, 543px" class="w-56 mt-4 md:mt-0 g-image g-image--lazy g-image--loaded" srcset="https://streamnative.io/assets/static/sn-logo-vertical-dark.c516648.a34f97839dee38e7499aa0c21d0b2255.png 543w" sizes="(max-width: 543px) 100vw, 543px">
+<br>
+<img src="flippenkitten.png" width="300">
+<br>
+	<br><br>
+    <table id="energytable" class="display" style="width:100%">
+        <thead>
+            <tr>
+                       <th><b>Publish Time</b></th>
+                       <th><b>Current Consumption</b></th>
+                       <th><b>Current</b></th>
+                       <th><b>Voltage</b></th>
+<th><b>Power</b></th>
+<th><b>Total</b></th>
+<th><b>System Time</b></th>
+
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                       <th><b>Publish Time</b></th>
+                       <th><b>Current Consumption</b></th>
+                       <th><b>Current</b></th>
+                       <th><b>Voltage</b></th>
+<th><b>Power</b></th>
+<th><b>Total</b></th>
+<th><b>System Time</b></th>
+            </tr>
+        </tfoot>
+    </table>
+
+<script>
+function isEmpty(val){
+    return (val === undefined || val == null || val.length <= 0) ? true : false;
+}
+function IsJsonString(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
+$(document).ready(function() {
+    var t = $('#energytable').DataTable();
+
+var wsUri = "ws://pulsar1:8080/ws/v2/consumer/persistent/public/default/electric/electricavenue?subscriptionType=Shared&receiverQueueSize=500";
+websocket = new WebSocket(wsUri);
+websocket.onopen = function(evt) {
+   console.log('open');
+};
+websocket.onerror = function(evt) {console.log('ERR', evt)};
+websocket.onmessage = function(evt) {
+    var dataPoints = JSON.parse(evt.data);
+    if ( dataPoints === undefined || dataPoints == null || dataPoints.payload === undefined || dataPoints.payload == null ) {
+            return;
+    }
+
+    if (websocket.readyState === WebSocket.OPEN) {
+        websocket.send("{\"messageId\": \"" + dataPoints.messageId + "\"}");
+    }
+    if (IsJsonString(atob(dataPoints.payload))) {
+         var pulsarMessage = JSON.parse(atob(dataPoints.payload));
+         if ( pulsarMessage === undefined || pulsarMessage == null ) {
+                 return;
+         }
+         var currentConsumption = "";
+         if ( !isEmpty(pulsarMessage.current_consumption) ) {
+                 currentConsumption = pulsarMessage.current_consumption;
+         }
+         var publishTime = "";
+         if ( !isEmpty(dataPoints.publishTime) ) {
+                 publishTime = dataPoints.publishTime;
+         }
+         var currentx = "";
+         if ( !isEmpty(pulsarMessage.current) ) {
+                 currentx = pulsarMessage.current;
+         }
+         var voltage= "";
+         if ( !isEmpty(pulsarMessage.voltage) ) {
+                voltage = pulsarMessage.voltage;
+         }
+         var powerx= "";
+         if ( !isEmpty(pulsarMessage.power) ) {
+                powerx = pulsarMessage.power;
+         }
+         var total= "";
+         if ( !isEmpty(pulsarMessage.total) ) {
+                total = pulsarMessage.total;
+         }
+         var systemTime= "";
+         if ( !isEmpty(pulsarMessage.systemtime) ) {
+                 systemTime = pulsarMessage.systemtime;
+         }
+
+         t.row.add( [ publishTime,currentConsumption,currentx,voltage,powerx,total,systemTime]).draw(true );
+       }
+};
+
+} ); </script>
+<p>
+<p><img src="nanosmallsticker.png" border="0" width="300"></p>
+<br>
+<a href="https://github.com/tspannhw/FLiP-Py-Energy">Source Code</a>
+</p><br>
+&copy; 2021/2022 Tim Spann @PaasDev - datainmotion.dev - streamnative.io
+</body>
+</html>
