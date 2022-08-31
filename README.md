@@ -2,6 +2,9 @@
 
 HS110 Energy Monitoring
 
+![image](https://user-images.githubusercontent.com/18673814/187780919-b0e0299f-c77e-4bea-85e8-023adb1e671d.png)
+
+
 ### Hardware
 
 * HS-110 TP-Link Monitoring Device
