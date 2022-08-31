@@ -1,0 +1,602 @@
+{
+  "version": 6,
+  "schemaInfo": {
+    "name": "electric",
+    "schema": {
+      "type": "record",
+      "name": "electric",
+      "fields": [
+        {
+          "name": "current",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "voltage",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "power",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "total",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "sw_ver",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "hw_ver",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "type",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "model",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "mac",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "deviceId",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "hwId",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "fwId",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "oemId",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "alias",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "dev_name",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "icon_hash",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "relay_state",
+          "type": [
+            "null",
+            "int"
+          ]
+        },
+        {
+          "name": "on_time",
+          "type": [
+            "null",
+            "int"
+          ]
+        },
+        {
+          "name": "active_mode",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "feature",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "updating",
+          "type": [
+            "null",
+            "int"
+          ]
+        },
+        {
+          "name": "rssi",
+          "type": [
+            "null",
+            "int"
+          ]
+        },
+        {
+          "name": "led_off",
+          "type": [
+            "null",
+            "int"
+          ]
+        },
+        {
+          "name": "latitude",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "longitude",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day1",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day2",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day3",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day4",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day5",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day6",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day7",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day8",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day9",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day10",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day11",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day12",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day13",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day14",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day15",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day16",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day17",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day18",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day19",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day20",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day21",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day22",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day23",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day24",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day25",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day26",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day27",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day28",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day29",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day30",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "day31",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "index",
+          "type": [
+            "null",
+            "int"
+          ]
+        },
+        {
+          "name": "zone_str",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "tz_str",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "dst_offset",
+          "type": [
+            "null",
+            "int"
+          ]
+        },
+        {
+          "name": "month1",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month2",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month3",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month4",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month5",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month6",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month7",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month8",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month9",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month10",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month11",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "month12",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "host",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "current_consumption",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "devicetime",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "ledon",
+          "type": [
+            "null",
+            "boolean"
+          ]
+        },
+        {
+          "name": "end",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "te",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "systemtime",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "cpu",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "memory",
+          "type": [
+            "null",
+            "float"
+          ]
+        },
+        {
+          "name": "diskusage",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "uuid",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "macaddress",
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      ]
+    },
+    "type": "JSON",
+    "properties": {}
+  }
+}
