@@ -343,9 +343,9 @@ Flink SQL> describe electric;
 +---------------------+---------+------+-----+--------+-----------+
 84 rows in set
 
-select `current` as AvgCurrent, 
-       voltage as MaxVoltage,
-       `power` as MaxPower,
+select `current` as Current, 
+       voltage as Voltage,
+       `power` as Power,
        current_consumption,
        `total` as Total,
        day31,
@@ -363,6 +363,23 @@ from electric
 group by model;
 
 ````
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/rowsummary.png" width="300">
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/consumeresults.png" width="300">
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/currentAndPower.png" width="300">
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinkeletricmax.png" width="300">
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinksqlavgmetrics.png" width="300">
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinksqlgroupbydetail.png" width="300">
+
+
+### Displaying The Topic in Pulsar Manager
+
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/raw/main/pmelectric.png" width="300">
+
 
 ### Reference
 
