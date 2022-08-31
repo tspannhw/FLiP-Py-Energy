@@ -411,7 +411,14 @@ group by model;
 * https://dzone.com/articles/monitoring-energy-usage-utilizing-apache-nifi-pyth
 * https://community.cloudera.com/t5/Community-Articles/Monitoring-Energy-Usage-Utilizing-Apache-NiFi-Python-Apache/ta-p/247525
 
+#### Simple Dashboard in JQuery, HTML and Websockets
 
-### Join me at Current Event October 2022
+<img src="https://github.com/tspannhw/FLiP-Py-Energy/blob/main/dashboard.png" width="800">
+
+* https://github.com/tspannhw/FLiP-Py-Energy/blob/main/electric.html
+
+
+
+#### Join me at Current Event October 2022
 
 <img src="https://raw.githubusercontent.com/tspannhw/FLiP-Py-Energy/main/Spann_Kjerrumgaard_-_Lets_Monitor_The_Conditions_at_the_Conference_342405.jpeg" width="800">
