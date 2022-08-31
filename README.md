@@ -410,3 +410,8 @@ group by model;
 * https://github.com/tspannhw/nifi-smartplug
 * https://dzone.com/articles/monitoring-energy-usage-utilizing-apache-nifi-pyth
 * https://community.cloudera.com/t5/Community-Articles/Monitoring-Energy-Usage-Utilizing-Apache-NiFi-Python-Apache/ta-p/247525
+
+
+### Join me at Current Event October 2022
+
+<img src="https://raw.githubusercontent.com/tspannhw/FLiP-Py-Energy/main/Spann_Kjerrumgaard_-_Lets_Monitor_The_Conditions_at_the_Conference_342405.jpeg" width="800">
