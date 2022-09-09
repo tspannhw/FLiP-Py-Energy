@@ -4,7 +4,9 @@ HS110 Energy Monitoring
 
 ![image](https://user-images.githubusercontent.com/18673814/187780919-b0e0299f-c77e-4bea-85e8-023adb1e671d.png)
 
-### Updated Software
+### Updated Software - python-kasa library with asynchio
+
+See energynew.py.   It is a new library with support for more devices.
 
 * https://github.com/python-kasa/python-kasa
 * https://python-kasa.readthedocs.io/en/latest/
