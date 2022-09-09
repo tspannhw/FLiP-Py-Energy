@@ -4,6 +4,13 @@ HS110 Energy Monitoring
 
 ![image](https://user-images.githubusercontent.com/18673814/187780919-b0e0299f-c77e-4bea-85e8-023adb1e671d.png)
 
+### Updated Software
+
+* https://github.com/python-kasa/python-kasa
+* https://python-kasa.readthedocs.io/en/latest/
+* pip install python-kasa
+* https://medium.com/geekculture/use-raspberry-pi-and-tp-link-kasa-to-automate-your-devices-9f936a6243c1
+
 
 ### Hardware
 
