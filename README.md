@@ -9,7 +9,6 @@ HS110 Energy Monitoring
 * https://github.com/python-kasa/python-kasa
 * https://python-kasa.readthedocs.io/en/latest/
 * pip install python-kasa
-* https://medium.com/geekculture/use-raspberry-pi-and-tp-link-kasa-to-automate-your-devices-9f936a6243c1
 
 
 ### Hardware
