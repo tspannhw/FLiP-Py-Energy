@@ -10,6 +10,7 @@ See energynew.py.   It is a new library with support for more devices.
 
 * https://github.com/python-kasa/python-kasa
 * https://python-kasa.readthedocs.io/en/latest/
+* https://python-kasa.readthedocs.io/en/latest/smartstrip.html
 * pip install python-kasa
 
 
